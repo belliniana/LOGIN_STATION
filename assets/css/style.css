@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+section {
+    display: flex;
+
+    & .imagem {
+        background-image: url("../img/imagem.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 100vh;
+    }
+
+    & .imagem img {
+        width: 100%;
+    }
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        gap: 25px;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+
+        & .login_section {
+            padding: 20px;
+            border: 1px solid #555;
+            border-radius: 10px;
+        }
+
+        & h2 {
+            font-family: Poppins;
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 37.5px;
+        }
+
+        & h1 {
+            font-family: Poppins;
+            font-size: 31px;
+            font-weight: 500;
+            line-height: 46.5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            & .cadastro .senha {
+                top: 33px;
+                border-radius: 6px;
+                border: 0.6px;
+            }
+
+            #E-mail {
+                width: 100%;
+                justify-content: space-between;
+                border: #28282879 0.6px solid;
+                padding: 19px 27px;
+                border-radius: 5px;
+            }
+
+            #Senha {
+                width: 100%;
+                border: none;
+                outline: none;
+            }
+
+            .input {
+                display: flex;
+                justify-content: space-between;
+                border: #2828286c 0.6px solid;
+                padding: 19px 27px;
+                border-radius: 5px;
+                color: #282828ea;
+            }
+
+            .esqueceu-senha {
+                display: flex;
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 18px;
+                gap: 5px;
+                justify-content: space-between;
+                color: #111111;
+
+                .lembrar-usuario {
+                    display: flex;
+                    margin-left: 211px;
+                    justify-content: space-between;
+                    color: #4d4d4da6;
+                }
+            }
+
+            .btn button {
+                background-color: black;
+                color: #fff;
+                width: 423px;
+                height: 60px;
+                padding: 18px 18px;
+                gap: 10px;
+                border-radius: 6px;
+            }
+        }
+    }
+}
